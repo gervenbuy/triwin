@@ -38,6 +38,16 @@
             transform: translateY(-8px);
             box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
         }
+        /* Loading Skeleton Animation */
+        .skeleton {
+            background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+            background-size: 200% 100%;
+            animation: loading 1.5s infinite;
+        }
+        @keyframes loading {
+            0% { background-position: 200% 0; }
+            100% { background-position: -200% 0; }
+        }
     </style>
 </head>
 <body class="bg-stone-50 text-stone-800">
@@ -78,7 +88,7 @@
             </div>
         </section>
 
-        <!-- Features Section: The Core Difference -->
+        <!-- Features Section -->
         <section id="features" class="py-20 bg-white">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-16">
@@ -190,90 +200,13 @@
                     <h2 class="text-sm font-bold text-amber-600 uppercase section-title fade-in">PORTFOLIO</h2>
                     <p class="text-3xl md:text-4xl font-bold text-stone-800 mt-2 fade-in" style="transition-delay: 100ms;">案例欣賞</p>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Gallery Item 1 -->
-                    <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 card-hover fade-in flex flex-col" style="transition-delay: 200ms;">
-                        <div class="relative h-64 overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?q=80&w=1770&auto=format&fit=crop" alt="台中七期・現代簡約宅" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-700">
-                            <div class="absolute top-4 left-4 bg-amber-600 text-white text-xs px-3 py-1 rounded-full shadow-md">室內設計</div>
-                        </div>
-                        <div class="p-6 flex-grow">
-                            <h3 class="text-xl font-bold text-stone-800 mb-2">台中七期・現代簡約宅</h3>
-                            <div class="text-xs text-stone-500 mb-3 flex items-center gap-2">
-                                <span>台中市西屯區</span>
-                                <span class="w-1 h-1 bg-stone-300 rounded-full"></span>
-                                <span>35坪</span>
-                                <span class="w-1 h-1 bg-stone-300 rounded-full"></span>
-                                <span>現代簡約</span>
-                            </div>
-                            <p class="text-stone-600 text-sm line-clamp-3">以灰白色調為基底，運用異材質拼接與隱藏式收納，打造沉穩大器且機能完善的居家空間。</p>
-                        </div>
-                    </div>
-
-                    <!-- Gallery Item 2 (Spanning 2 columns on lg screens) -->
-                    <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 card-hover fade-in lg:col-span-2 flex flex-col md:flex-row" style="transition-delay: 300ms;">
-                        <div class="relative h-64 md:h-auto md:w-1/2 overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1616046229478-9901c5536a45?q=80&w=1780&auto=format&fit=crop" alt="南投草屯・溫馨老宅翻新" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-700">
-                            <div class="absolute top-4 left-4 bg-amber-600 text-white text-xs px-3 py-1 rounded-full shadow-md">老屋翻新</div>
-                        </div>
-                        <div class="p-8 md:w-1/2 flex flex-col justify-center">
-                            <h3 class="text-2xl font-bold text-stone-800 mb-2">南投草屯・溫馨老宅翻新</h3>
-                            <div class="text-xs text-stone-500 mb-4 flex items-center gap-2">
-                                <span>南投縣草屯鎮</span>
-                                <span class="w-1 h-1 bg-stone-300 rounded-full"></span>
-                                <span>40年透天</span>
-                                <span class="w-1 h-1 bg-stone-300 rounded-full"></span>
-                                <span>日式無印</span>
-                            </div>
-                            <p class="text-stone-600 mb-4">保留老屋的溫潤記憶，重新梳理水電管線與採光動線。將封閉的隔間打開，讓陽光重新灑落家中，為一家人打造充滿笑聲的溫暖場域。</p>
-                            <div class="flex flex-wrap gap-2 text-xs text-stone-500">
-                                <span class="bg-stone-100 px-2 py-1 rounded">#採光優化</span>
-                                <span class="bg-stone-100 px-2 py-1 rounded">#結構補強</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Gallery Item 3 (Spanning 2 columns on lg screens) -->
-                     <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 card-hover fade-in lg:col-span-2 flex flex-col md:flex-row-reverse" style="transition-delay: 400ms;">
-                        <div class="relative h-64 md:h-auto md:w-1/2 overflow-hidden">
-                             <img src="https://images.unsplash.com/photo-1615874959474-d609969a20ed?q=80&w=1780&auto=format&fit=crop" alt="苗栗・北歐風木作收納" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-700">
-                             <div class="absolute top-4 right-4 bg-amber-600 text-white text-xs px-3 py-1 rounded-full shadow-md">木工裝潢</div>
-                        </div>
-                        <div class="p-8 md:w-1/2 flex flex-col justify-center">
-                            <h3 class="text-2xl font-bold text-stone-800 mb-2">苗栗・北歐風木作收納</h3>
-                            <div class="text-xs text-stone-500 mb-4 flex items-center gap-2">
-                                <span>苗栗縣頭份市</span>
-                                <span class="w-1 h-1 bg-stone-300 rounded-full"></span>
-                                <span>新成屋</span>
-                                <span class="w-1 h-1 bg-stone-300 rounded-full"></span>
-                                <span>北歐風</span>
-                            </div>
-                            <p class="text-stone-600 mb-4">針對屋主大量的藏書與收藏品，我們量身打造了整面的造型書牆與隱藏式收納櫃。利用木作的溫潤質感，中和了白色空間的冷冽，兼具美感與強大的實用機能。</p>
-                             <div class="flex flex-wrap gap-2 text-xs text-stone-500">
-                                <span class="bg-stone-100 px-2 py-1 rounded">#客製化收納</span>
-                                <span class="bg-stone-100 px-2 py-1 rounded">#系統櫃整合</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Gallery Item 4 -->
-                    <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 card-hover fade-in flex flex-col" style="transition-delay: 500ms;">
-                        <div class="relative h-64 overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?q=80&w=1770&auto=format&fit=crop" alt="彰化・商業空間改造" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-700">
-                            <div class="absolute top-4 left-4 bg-amber-600 text-white text-xs px-3 py-1 rounded-full shadow-md">商業空間</div>
-                        </div>
-                        <div class="p-6 flex-grow">
-                            <h3 class="text-xl font-bold text-stone-800 mb-2">彰化・商業空間改造</h3>
-                            <div class="text-xs text-stone-500 mb-3 flex items-center gap-2">
-                                <span>彰化縣彰化市</span>
-                                <span class="w-1 h-1 bg-stone-300 rounded-full"></span>
-                                <span>店面</span>
-                                <span class="w-1 h-1 bg-stone-300 rounded-full"></span>
-                                <span>工業風</span>
-                            </div>
-                            <p class="text-stone-600 text-sm line-clamp-3">透過粗獷的鐵件與溫暖的木質元素碰撞，為品牌注入靈魂，打造出獨一無二且動線流暢的顧客體驗空間。</p>
-                        </div>
-                    </div>
+                
+                <!-- Gallery Container: Dynamic Content will be injected here -->
+                <div id="gallery-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 min-h-[400px]">
+                    <!-- Loading Skeletons -->
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-sm h-96 flex flex-col skeleton"></div>
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-sm h-96 flex flex-col skeleton"></div>
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-sm h-96 flex flex-col skeleton"></div>
                 </div>
             </div>
         </section>
@@ -372,6 +305,88 @@
                     });
                 });
             });
+
+            // --------------------------------------------------------
+            // Google Sheet API Logic
+            // --------------------------------------------------------
+            // STEP 1: 將您部署好的 Web App URL 貼在下方引號中
+            const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyX5CWLALSSJgAMa3HG-7AAxs6zv8TQ7_-KwAAeofOCX8lBEdQ3s6vYtNrlr7j2A3go/exec'; 
+
+            const galleryContainer = document.getElementById('gallery-container');
+
+            async function fetchGalleryData() {
+                // 如果沒有設定 URL，顯示預設訊息 (為了演示目的，若無 URL 則不執行)
+                if (GOOGLE_SCRIPT_URL === '請將您的_WEB_APP_URL_貼在這裡') {
+                    console.log('請先設定 Google Script URL');
+                    return; 
+                }
+
+                try {
+                    const response = await fetch(GOOGLE_SCRIPT_URL);
+                    const data = await response.json();
+                    renderGallery(data);
+                } catch (error) {
+                    console.error('Error fetching data:', error);
+                    // 發生錯誤時保留原本的 Loading 骨架或顯示錯誤訊息，這裡選擇顯示錯誤訊息
+                    galleryContainer.innerHTML = '<p class="text-center w-full col-span-3 text-stone-500">目前無法載入案例，請稍後再試。</p>';
+                }
+            }
+
+            function renderGallery(cases) {
+                // 清空 Loading 骨架
+                galleryContainer.innerHTML = '';
+
+                // 如果沒有資料
+                if (!cases || cases.length === 0) {
+                    galleryContainer.innerHTML = '<p class="text-center w-full col-span-3 text-stone-500">目前尚無案例分享。</p>';
+                    return;
+                }
+
+                cases.forEach((item, index) => {
+                    // 根據資料欄位名稱 (假設 Google Sheet 第一列為這些名稱)
+                    // 案件編號, 案件名稱, 服務類別, 地點, 坪數, 風格, 完工日期, 封面圖連結, 設計理念, 標籤
+                    
+                    // 處理標籤: 將逗號分隔的字串轉為 HTML
+                    let tagsHtml = '';
+                    if (item['標籤']) {
+                        const tags = item['標籤'].toString().split(/[,,、]/); // 支援逗號或頓號分隔
+                        tagsHtml = tags.map(tag => `<span class="bg-stone-100 px-2 py-1 rounded">#${tag.trim()}</span>`).join('');
+                    }
+
+                    // 判斷是否需要跨欄 (例如每三個的第二個跨兩欄，或是隨機，這裡做簡單的順序展示)
+                    // 為了保持簡單與 RWD，這裡先統一使用標準卡片，若要特殊跨欄可依 index 判斷
+                    const isLarge = false; // 可依需求開啟 index % 3 === 1; 
+
+                    // 處理圖片連結：若無圖片則使用 Placeholder
+                    const imgUrl = item['封面圖連結'] ? item['封面圖連結'] : 'https://via.placeholder.com/600x400?text=No+Image';
+
+                    const cardHtml = `
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 card-hover fade-in visible flex flex-col ${isLarge ? 'lg:col-span-2 flex-row' : ''}">
+                        <div class="relative h-64 ${isLarge ? 'md:h-auto md:w-1/2' : ''} overflow-hidden">
+                            <img src="${imgUrl}" alt="${item['案件名稱']}" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-700">
+                            <div class="absolute top-4 left-4 bg-amber-600 text-white text-xs px-3 py-1 rounded-full shadow-md">${item['服務類別'] || '專案'}</div>
+                        </div>
+                        <div class="p-6 ${isLarge ? 'md:w-1/2 flex flex-col justify-center' : 'flex-grow'}">
+                            <h3 class="text-xl font-bold text-stone-800 mb-2">${item['案件名稱']}</h3>
+                            <div class="text-xs text-stone-500 mb-3 flex items-center gap-2 flex-wrap">
+                                <span>${item['地點'] || ''}</span>
+                                ${item['坪數'] ? `<span class="w-1 h-1 bg-stone-300 rounded-full"></span><span>${item['坪數']}</span>` : ''}
+                                ${item['風格'] ? `<span class="w-1 h-1 bg-stone-300 rounded-full"></span><span>${item['風格']}</span>` : ''}
+                            </div>
+                            <p class="text-stone-600 text-sm mb-4 line-clamp-3">${item['設計理念'] || ''}</p>
+                            <div class="flex flex-wrap gap-2 text-xs text-stone-500">
+                                ${tagsHtml}
+                            </div>
+                        </div>
+                    </div>
+                    `;
+                    
+                    galleryContainer.insertAdjacentHTML('beforeend', cardHtml);
+                });
+            }
+
+            // 啟動讀取
+            fetchGalleryData();
         });
     </script>
 </body>
