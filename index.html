@@ -55,11 +55,13 @@
     <!-- Header -->
     <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 shadow-sm">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Logo Dot Reverted to text-sm -->
             <div class="text-2xl font-bold text-stone-700 tracking-wider flex items-center">
                 三瑩<span class="text-amber-600 text-sm px-2 align-middle">●</span>設計
             </div>
             <nav class="hidden md:flex space-x-8 items-center">
                 <a href="#features" class="text-stone-600 hover:text-amber-600 transition-colors">核心優勢</a>
+                <a href="#comparison" class="text-stone-600 hover:text-amber-600 transition-colors">超級比一比</a>
                 <a href="#concept" class="text-stone-600 hover:text-amber-600 transition-colors">專業證照</a>
                 <a href="#services" class="text-stone-600 hover:text-amber-600 transition-colors">服務項目</a>
                 <a href="#gallery" class="text-stone-600 hover:text-amber-600 transition-colors">案例欣賞</a>
@@ -88,7 +90,7 @@
             </div>
         </section>
 
-        <!-- Features Section -->
+        <!-- Features Section: The Core Difference -->
         <section id="features" class="py-20 bg-white">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-16">
@@ -105,7 +107,7 @@
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a2 2 0 01-2-2V4a2 2 0 012-2h6a2 2 0 012 2v4z" /></svg>
                         </div>
                         <h3 class="text-xl font-bold mb-2">溝通零斷層</h3>
-                        <p class="text-stone-600">一個窗口對到底，從設計到施工，您的想法精準傳達，溝通不心累。</p>
+                        <p class="text-stone-600 leading-relaxed">您的專屬窗口，從設計、施工到完工，確保成品就是您夢想中的樣子。</p>
                     </div>
                     <!-- Feature 2 -->
                     <div class="bg-stone-50 p-8 rounded-2xl card-hover fade-in" style="transition-delay: 400ms;">
@@ -113,7 +115,7 @@
                              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
                         </div>
                         <h3 class="text-xl font-bold mb-2">工序超流暢</h3>
-                        <p class="text-stone-600">動線、插座、出水口一步到位，無縫施工超效率，進度絕不延遲。</p>
+                        <p class="text-stone-600 leading-relaxed">精準調配木作、水電、油漆與所有工程，讓各工序精確銜接，比預期更早迎接新居。</p>
                     </div>
                     <!-- Feature 3 -->
                     <div class="bg-stone-50 p-8 rounded-2xl card-hover fade-in" style="transition-delay: 500ms;">
@@ -121,14 +123,94 @@
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2 1M4 7l2-1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5" /></svg>
                         </div>
                         <h3 class="text-xl font-bold mb-2">空間更極致</h3>
-                        <p class="text-stone-600">木作與管線完美結合，不浪費一寸空間，將設計感發揮到極致。</p>
+                        <p class="text-stone-600 leading-relaxed">透過木作的靈活與系統櫃的高效收納，我們在方寸之間，為您創造最大的生活可能。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Comparison Section -->
+        <section id="comparison" class="py-20 bg-stone-100">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-sm font-bold text-amber-600 uppercase section-title fade-in">Why Choose Us?</h2>
+                    <p class="text-3xl md:text-4xl font-bold text-stone-800 mt-2 fade-in" style="transition-delay: 100ms;">裝潢選擇對照表，看見細節差異</p>
+                </div>
+                
+                <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-8 items-center fade-in" style="transition-delay: 200ms;">
+                    <!-- Traditional Way -->
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-stone-200 opacity-80 hover:opacity-100 transition-opacity">
+                        <div class="text-center mb-6">
+                            <h3 class="text-xl font-bold text-stone-500">一般統包 / 設計公司</h3>
+                            <div class="w-12 h-1 bg-stone-300 mx-auto mt-2"></div>
+                        </div>
+                        <ul class="space-y-4">
+                            <li class="flex items-start gap-3">
+                                <span class="text-stone-400 mt-1"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd" /></svg></span>
+                                <div>
+                                    <strong class="text-stone-600 block">多頭馬車，溝通斷層</strong>
+                                    <p class="text-sm text-stone-500">設計師、木工、水電各自為政，容易出現責任推卸，業主需耗時居中協調。</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-stone-400 mt-1"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd" /></svg></span>
+                                <div>
+                                    <strong class="text-stone-600 block">介面銜接問題多</strong>
+                                    <p class="text-sm text-stone-500">木作與管線配合不良，常發生插座位置不對、管線外露或牆面修補痕跡明顯。</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-stone-400 mt-1"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd" /></svg></span>
+                                <div>
+                                    <strong class="text-stone-600 block">工期難以掌控</strong>
+                                    <p class="text-sm text-stone-500">工班調度時間不一，一個環節延誤導致整體工期拖延，入住時間遙遙無期。</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Triwin Way -->
+                    <div class="bg-white p-8 rounded-2xl shadow-xl border-2 border-amber-500 relative transform scale-105 z-10">
+                        <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-amber-600 text-white px-4 py-1 rounded-full text-sm font-bold shadow-md">
+                            推薦選擇
+                        </div>
+                        <div class="text-center mb-6">
+                            <!-- Dot styling applied here in Comparison Section -->
+                            <h3 class="text-xl font-bold text-amber-700 flex justify-center items-center">
+                                三瑩<span class="text-amber-500 text-xs px-1 align-middle">●</span>設計
+                            </h3>
+                            <div class="w-12 h-1 bg-amber-500 mx-auto mt-2"></div>
+                        </div>
+                        <ul class="space-y-4">
+                            <li class="flex items-start gap-3">
+                                <span class="text-amber-500 mt-1"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg></span>
+                                <div>
+                                    <strong class="text-stone-800 block">單一窗口，責任明確</strong>
+                                    <p class="text-sm text-stone-600">從頭到尾單一負責人，木工師傅具備水電專業，內部溝通零時差，完全理解您的需求。</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-amber-500 mt-1"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg></span>
+                                <div>
+                                    <strong class="text-stone-800 block">獨家木工水電整合技術</strong>
+                                    <p class="text-sm text-stone-600">結構與管線完美避讓，一步到位！插座、出水口位置精準，美觀與耐用度大幅提升。</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-amber-500 mt-1"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg></span>
+                                <div>
+                                    <strong class="text-stone-800 block">高效排程，準時完工</strong>
+                                    <p class="text-sm text-stone-600">精準掌控每一道工序，無縫銜接。效率提升30%，讓您更快實現入住夢想。</p>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Concept Section -->
-        <section id="concept" class="py-20 bg-stone-100">
+        <section id="concept" class="py-20 bg-white">
             <div class="container mx-auto px-6">
                 <div class="flex flex-col md:flex-row items-center gap-12">
                     <div class="md:w-1/3 text-center fade-in flex justify-center">
@@ -148,7 +230,7 @@
         </section>
 
         <!-- Services Section -->
-        <section id="services" class="py-20 bg-white">
+        <section id="services" class="py-20 bg-stone-100">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-16">
                     <h2 class="text-sm font-bold text-amber-600 uppercase section-title fade-in">SERVICE</h2>
@@ -156,7 +238,7 @@
                 </div>
                 <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                     <!-- Service Card 1 -->
-                    <div class="bg-stone-50 rounded-2xl card-hover fade-in overflow-hidden flex flex-col" style="transition-delay: 200ms;">
+                    <div class="bg-white rounded-2xl card-hover fade-in overflow-hidden flex flex-col" style="transition-delay: 200ms;">
                         <img src="https://i.meee.com.tw/myCHvup.png" alt="木工裝潢" class="w-full h-40 object-cover">
                         <div class="p-6 flex-grow">
                             <h3 class="font-bold text-lg">木工裝潢</h3>
@@ -164,7 +246,7 @@
                         </div>
                     </div>
                     <!-- Service Card 2 -->
-                    <div class="bg-stone-50 rounded-2xl card-hover fade-in overflow-hidden flex flex-col" style="transition-delay: 300ms;">
+                    <div class="bg-white rounded-2xl card-hover fade-in overflow-hidden flex flex-col" style="transition-delay: 300ms;">
                         <img src="https://images.unsplash.com/photo-1596079890744-c1a0462d0975?q=80&w=1771&auto=format&fit=crop" alt="室內設計" class="w-full h-40 object-cover">
                         <div class="p-6 flex-grow">
                             <h3 class="font-bold text-lg">室內設計</h3>
@@ -172,7 +254,7 @@
                         </div>
                     </div>
                     <!-- Service Card 3 -->
-                    <div class="bg-stone-50 rounded-2xl card-hover fade-in overflow-hidden flex flex-col" style="transition-delay: 400ms;">
+                    <div class="bg-white rounded-2xl card-hover fade-in overflow-hidden flex flex-col" style="transition-delay: 400ms;">
                         <img src="https://i.meee.com.tw/AYbKsFg.png" alt="老屋翻新" class="w-full h-40 object-cover">
                         <div class="p-6 flex-grow">
                             <h3 class="font-bold text-lg">老屋翻新</h3>
@@ -180,7 +262,7 @@
                         </div>
                     </div>
                     <!-- Service Card 4 -->
-                    <div class="bg-stone-50 rounded-2xl card-hover fade-in overflow-hidden flex flex-col" style="transition-delay: 500ms;">
+                    <div class="bg-white rounded-2xl card-hover fade-in overflow-hidden flex flex-col" style="transition-delay: 500ms;">
                          <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=1770&auto=format&fit=crop" alt="統包工程" class="w-full h-40 object-cover">
                         <div class="p-6 flex-grow">
                             <h3 class="font-bold text-lg">統包工程</h3>
@@ -192,7 +274,7 @@
         </section>
 
         <!-- Gallery Section -->
-        <section id="gallery" class="py-20 bg-stone-100">
+        <section id="gallery" class="py-20 bg-white">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-16">
                     <h2 class="text-sm font-bold text-amber-600 uppercase section-title fade-in">PORTFOLIO</h2>
@@ -202,9 +284,9 @@
                 <!-- Gallery Container: Dynamic Content will be injected here -->
                 <div id="gallery-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 min-h-[400px]">
                     <!-- Loading Skeletons -->
-                    <div class="bg-white rounded-2xl overflow-hidden shadow-sm h-96 flex flex-col skeleton"></div>
-                    <div class="bg-white rounded-2xl overflow-hidden shadow-sm h-96 flex flex-col skeleton"></div>
-                    <div class="bg-white rounded-2xl overflow-hidden shadow-sm h-96 flex flex-col skeleton"></div>
+                    <div class="bg-stone-50 rounded-2xl overflow-hidden shadow-sm h-96 flex flex-col skeleton"></div>
+                    <div class="bg-stone-50 rounded-2xl overflow-hidden shadow-sm h-96 flex flex-col skeleton"></div>
+                    <div class="bg-stone-50 rounded-2xl overflow-hidden shadow-sm h-96 flex flex-col skeleton"></div>
                 </div>
             </div>
         </section>
@@ -234,7 +316,7 @@
                     <p class="text-sm text-stone-400">您的夢想藍圖，我們用心實現。</p>
                     <div class="flex space-x-4 mt-4 justify-center md:justify-start">
                         <a href="https://www.facebook.com/groups/triwin" target="_blank" class="text-stone-400 hover:text-white" aria-label="Facebook"><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v2.385z"/></svg></a>
-                        <a href="https://maps.app.goo.gl/r7BRvuSVeXV95w9k6?g_st=ic" target="_blank" class="text-stone-400 hover:text-white" aria-label="Google Maps"><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></a>
+                        <a href="https://www.google.com/maps/place/%E4%B8%89%E7%91%A9%E5%AE%A4%E5%85%A7%E8%A3%9D%E4%BF%AE%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/@24.1617958,120.7272629,17z/data=!3m1!4b1!4m6!3m5!1s0x3469191c8a6b5e83:0x9bbb7455eb2aaa79!8m2!3d24.1617958!4d120.7298432!16s%2Fg%2F11lzq_y77b?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="text-stone-400 hover:text-white" aria-label="Google Maps"><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></a>
                     </div>
                 </div>
                 <div>
@@ -247,10 +329,17 @@
                  <div>
                     <h3 class="font-semibold text-white mb-4">標籤</h3>
                     <div class="flex flex-wrap gap-2 text-xs text-stone-400 justify-center md:justify-start">
-                        <span class="bg-stone-700 px-2 py-1 rounded">#木作統包工程</span>
-                        <span class="bg-stone-700 px-2 py-1 rounded">#系統櫃工程</span>
-                        <span class="bg-stone-700 px-2 py-1 rounded">#老屋翻新</span>
-                        <span class="bg-stone-700 px-2 py-1 rounded">#木工水電整合</span>
+                        <span class="bg-stone-700 px-2 py-1 rounded">#木作裝修</span>
+                        <span class="bg-stone-700 px-2 py-1 rounded">#木工工班</span>
+                        <span class="bg-stone-700 px-2 py-1 rounded">#室內設計</span>
+                        <span class="bg-stone-700 px-2 py-1 rounded">#商業空間設計</span>
+                        <span class="bg-stone-700 px-2 py-1 rounded">#全室裝修</span>
+                        <span class="bg-stone-700 px-2 py-1 rounded">#全屋訂製</span>
+                        <span class="bg-stone-700 px-2 py-1 rounded">#系統櫃工廠</span>
+                        <span class="bg-stone-700 px-2 py-1 rounded">#三瑩室內裝修</span>
+                        <span class="bg-stone-700 px-2 py-1 rounded">#三瑩裝修</span>
+                        <span class="bg-stone-700 px-2 py-1 rounded">#三瑩設計</span>
+                        <span class="bg-stone-700 px-2 py-1 rounded">#統包工程</span>
                     </div>
                 </div>
             </div>
